@@ -5,6 +5,12 @@ export const StyledMainPage = styled.div`
   padding-bottom: 1rem;
   font-family: Arial, Helvetica, sans-serif;
 
+  .favoritesBtn {
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 18px;
+  }
+
   .listTitle {
     background-color: #f8f8f8;
     height: 50px;
@@ -24,7 +30,6 @@ export const StyledMainPage = styled.div`
       display: flex;
       align-items: center;
       background-color: #bdf;
-      max-width: 177px;
       font-weight: 700;
       text-align: center;
 

@@ -31,7 +31,7 @@ export const CartPage = () => {
         </div>
         <div className="logos">
           <div className="homelogo">
-            <img src={matchInfo.homeLogo} alt="" />{" "}
+            <img src={matchInfo.homeLogo} alt="" />
           </div>
           <div className="awaylogo">
             <img src={matchInfo.awayLogo} alt="" />
@@ -45,7 +45,7 @@ export const CartPage = () => {
             <h3>VS</h3>
           </div>
           <div className="awayname">
-            {" "}
+            
             <h2>{matchInfo.awayName}</h2>
           </div>
         </div>

@@ -11,31 +11,19 @@ export const StyledMatch = styled.div<IStyledMatchProps>`
   .h2h {
     display: flex;
     align-items: center;
-    max-width: 555px;
-    height: 30px;
-    width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-bottom: 1px solid #dbdbdb;
 
     .save {
       background: none;
       border: none;
-
-      .star-icon {
-        font-size: 2em;
-        color: grey;
-        transition: color 0.3s;
-        cursor: pointer;
-      }
-      .star-icon:hover {
-        color: yellow;
-      }
-      .star-icon:active {
-        color: yellow;
-      }
     }
     .addToFavoritesBtn{
       height: 30px;
+      margin: 10px;
+      width: 130px;
+      border-radius: 12px;
+      border: 1px solid white;
     }
     .goals {
       font-size: 18px;
@@ -53,12 +41,13 @@ export const StyledMatch = styled.div<IStyledMatchProps>`
       width: 100%;
     }
     
-    .CardBtn {
+    .openCart {
+      width: 70px;
       height: 50px;
+      border: 1px solid white;
+      border-radius: 12px;
       padding: 10px;
-      gap: 5px;
     }
-
 
     .status {
       color: red;

@@ -92,7 +92,7 @@ export const MainPage = () => {
             <div className="listTitle">
               <h1>Текстовые трансляции Not 1XBet</h1>
             </div>
-            <button onClick={moveToFavorites}>Favorites</button>
+            <button onClick={moveToFavorites} className="favoritesBtn">Favorites</button>
             <div className="recommendations">
               
               <div className={index === 0 ? "matchs" : "matchTwo"}>
