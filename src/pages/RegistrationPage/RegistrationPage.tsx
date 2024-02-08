@@ -73,6 +73,7 @@ export const RegistrationPage: React.FC = () => {
         "userpassword",
       ]);
       localStorage.setItem("registrationFormData", JSON.stringify(formData));
+    
 
       console.log("Form Data:", formData);
 

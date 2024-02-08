@@ -29,6 +29,7 @@ export const ProfilePage: React.FC = () => {
   );
   const storedData = storedDataString ? JSON.parse(storedDataString) : null;
 
+  const username = storedData ? storedData[0] : "N/A";
   const useremail = storedData ? storedData[2] : "N/A";
 
   const handleSubmit = () => {
@@ -36,7 +37,7 @@ export const ProfilePage: React.FC = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("user");
+    localStorage.removeItem("userName");
     setIsLoggedOut(true);
 
     setTimeout(() => {
@@ -56,7 +57,7 @@ export const ProfilePage: React.FC = () => {
         <Heading headingText="Профиль" headingType="h1" />
         <div className="info">
           <div className="name">
-            <h3>Имя: {localStorage.getItem('userName')}</h3>
+            <h3>Имя: {username}</h3>
           </div>
           <div className="email">
             <h3>Почта: {useremail}</h3>

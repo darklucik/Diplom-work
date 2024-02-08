@@ -4,8 +4,7 @@ import { FavoriteStyle } from "./favorites.styled";
 import { useNavigate } from "react-router-dom";
 
 const FavoritesPage: React.FC = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [favoritesData, setFavoritesData] = useState<MatchItem[]>([]);
 
@@ -16,9 +15,17 @@ const FavoritesPage: React.FC = () => {
     }
   }, []);
 
+  const removeMatchFromFavorites = (matchId: number) => {
+    const updatedFavorites = favoritesData.filter(
+      (match) => match.fixture.id !== matchId
+    );
+    setFavoritesData(updatedFavorites);
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+  };
+
   const moveToMain = () => {
-      navigate("/main")
-  }
+    navigate("/main");
+  };
 
   return (
     <FavoriteStyle>
